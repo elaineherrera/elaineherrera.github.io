@@ -16,6 +16,11 @@ p { margin-bottom: 15px; line-height: 1.5; }
 .contact p { margin: 0; }
 .label { font-weight: 600; }
 
+h2 { font-weight: 500; font-size: 1.2em; margin-top: 1cm; margin-bottom: 0.1cm; }
+h2:first-child { margin-top: 0; }
+.publications { padding-left: 1cm; margin-top: 0; line-height: 1.6; }
+.publications li { padding-left: 0.2cm; margin-bottom: 0.4cm; }
+
 /* narrow screens (portrait phones): stack photo above text */
 @media (max-width: 700px) {
   body { margin: 0.5in 0.75rem; }
