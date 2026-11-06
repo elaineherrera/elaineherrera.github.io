@@ -19,7 +19,6 @@ p { margin-bottom: 15px; line-height: 1.5; }
 @media (max-width: 700px) {
   body { margin: 0.5in 0.75rem; }
   .content { flex-direction: column; gap: 15px; }
-  <!-- .content img { height: auto; max-width: 100%; }-->
   .content img { max-width: 70%; margin: 0 auto; }
   .box { padding: 0.4cm; }
   .contact { padding: 0.4cm; font-size: 0.95em; } 
