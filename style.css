@@ -16,12 +16,18 @@ p { margin-bottom: 15px; line-height: 1.5; }
 .contact p { margin: 0; }
 .label { font-weight: 600; }
 
-@media (max-height: 500px) {
-  body { margin: 0.4in 0.75rem; }
+/* narrow screens (portrait phones): stack photo above text */
+@media (max-width: 700px) {
+  body { margin: 0.5in 0.75rem; }
   .content { flex-direction: column; gap: 15px; }
   .content img { width: 70%; max-width: none; margin: 0 auto; }
   .box { padding: 0.4cm; }
   .contact { padding: 0.4cm; font-size: 0.95em; }
+}
+
+/* short screens (landscape phones): just trim the page margin */
+@media (max-height: 500px) {
+  body { margin: 0.4in 0.75rem; }
 }
 
 /*
