@@ -8,3 +8,7 @@ p { margin-bottom: 15px; line-height: 1.5; }
 .content img { height: 600px; width: auto;  display: block; }
 .text { flex: 1; }
 .cv {margin-top: 0; width: 100%; height: 700px;border: none; }
+
+.contact { margin-top: 0.5cm; padding: 0.5cm; background-color: #C5D8BE; line-height: 1.6; box-sizing: border-box; }
+.contact p { margin: 0; }
+.label { font-weight: 600; }
