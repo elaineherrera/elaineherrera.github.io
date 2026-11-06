@@ -17,6 +17,11 @@
     .content img { height: 600px; width: auto; }
     .text { flex: 1; }
     .cv {margin-top: 0; width: 100%; height: 700px;border: none;}
+    .cv-link { display: none; }
+    @media (pointer: coarse) {
+  .cv { display: none; }
+  .cv-link { display: block; margin: 0; }
+}
 </style>
 </head>
     
@@ -29,7 +34,16 @@
     <a href="photos.html">photos</a>
 </div>
 <div class="box">
-    <iframe src="cv.pdf#zoom=130" class="cv"></iframe>
+
+<p class="cv-link">
+  <a href="{{ '/cv.pdf' | relative_url }}" target="_blank" rel="noopener">open cv (pdf)</a>
+</p>
+
+<div class="content">
+<iframe src="{{ '/cv.pdf' | relative_url }}#zoom=130" class="cv"></iframe>
+</div>
+
+    
 </div>  
 </body>
 </html>
