@@ -16,7 +16,7 @@ p { margin-bottom: 15px; line-height: 1.5; }
 .contact p { margin: 0; }
 .label { font-weight: 600; }
 
-.cv-link { margin-top: 0; margin-bottom: 15px; }
+.cv-link { margin: 0 0 15px 0; padding: 0; line-height: 1.5; }
 .cv { margin-top: 0; width: 100%; height: 700px; border: none; }
 
 h2 { font-weight: 500; font-size: 1.2em; margin-top: 1cm; margin-bottom: 0.1cm; }
