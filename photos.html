@@ -15,71 +15,43 @@ a { text-decoration: none; color: #BD685E; font-weight: 500; }
 a:hover { background-color: #333333; color: #DBE9D6; }
 p { margin-bottom: 15px; line-height: 1.5; }
 .box { border: 1px solid black; height: auto; padding: 0.5cm; margin-top: 0.5cm; }
-.content {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-    flex-wrap: wrap;
-}
+.content { display: flex; align-items: flex-start; gap: 30px; flex-wrap: wrap; }
 .content img { width: 40%; max-width: 450px; height: auto; display: block; }
-         
 .text { flex: 1; min-width: 0; }
 .text p {margin-top: 0; }
 
+/* HOME */
 .contact { margin-top: 0.5cm; padding: 0.5cm; background-color: #C5D8BE; line-height: 1.6; box-sizing: border-box;
          overflow-wrap: anywhere; }
 .contact p { margin: 0; }
 .label { font-weight: 600; }
 
+/* CV */
 .cv-link { margin: 0 0 15px 0; padding: 0; line-height: 1.5; }
 .cv { margin-top: 0; width: 100%; height: 700px; border: none; }
 
+/* RESEARCH */
 h2 { font-weight: 500; font-size: 1.2em; margin-top: 1cm; margin-bottom: 0.1cm; }
 h2:first-child { margin-top: 0; }
 .publications { padding-left: 1cm; margin-top: 0; line-height: 1.6; }
 .publications li { padding-left: 0.2cm; margin-bottom: 0.4cm; }
 
-.content figure {
-    width: calc(33.333% - 20px);
-    max-width: 450px;
-    margin: 0;
-}
-
-.content figure img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.content figcaption {
-    font-size: 0.75em;
-    text-align: center;
-    margin-top: 8px;
+/* PHOTOS */
+.content figure { width: calc(33.333% - 20px); max-width: 450px; margin: 0; }
+.content figure img { width: 100%; height: auto; display: block; }
+.content figcaption { font-size: 0.75em; text-align: center; margin-top: 8px; }
+@media (max-width: 700px) {
+    .photo-gallery { flex-direction: row; flex-wrap: wrap; gap: 15px; }
+    .photo-gallery figure { width: calc(50% - 7.5px); max-width: none; }
 }
 
 /* narrow screens (portrait phones): stack photo above text */
-/*@media (max-width: 700px) {
+@media (max-width: 700px) {
   body { margin: 0.5in 0.75rem; }
   .content { flex-direction: column; gap: 15px; }
   .content img { width: 70%; max-width: none; margin: 0 auto; }
   .box { padding: 0.4cm; }
   .contact { padding: 0.4cm; font-size: 0.95em; }
-}*/
-@media (max-width: 700px) {
-    body { margin: 0.5in 0.75rem; }
-
-    .content {
-        flex-direction: row;
-        gap: 15px;
-    }
-
-    .content figure {
-        width: calc(50% - 7.5px);
-        max-width: none;
-    }
-
-    .box { padding: 0.4cm; }
-    .contact { padding: 0.4cm; font-size: 0.95em; }
 }
 
 /* short screens (landscape phones): just trim the page margin */
