@@ -40,19 +40,30 @@ h2:first-child { margin-top: 0; }
 .content figure { width: calc(33.333% - 20px); max-width: 450px; margin: 0; }
 .content figure img { width: 100%; height: auto; display: block; }
 .content figcaption { font-size: 0.75em; text-align: center; margin-top: 8px; }
-@media (max-width: 700px) {
+/*@media (max-width: 700px) {
     .photo-gallery { flex-direction: row; flex-wrap: wrap; gap: 15px; }
     .photo-gallery figure { width: calc(50% - 7.5px); max-width: none; }
 }
-
 /* narrow screens (portrait phones): stack photo above text */
-@media (max-width: 700px) {
+/*@media (max-width: 700px) {
   body { margin: 0.5in 0.75rem; }
   .content { flex-direction: column; gap: 15px; }
   .content img { width: 70%; max-width: none; margin: 0 auto; }
   .box { padding: 0.4cm; }
   .contact { padding: 0.4cm; font-size: 0.95em; }
 }
+/* narrow screens (portrait phones) */
+@media (max-width: 700px) {
+    body { margin: 0.5in 0.75rem;}
+/* Homepage: photo above text */
+    .content:not(.photo-gallery) { flex-direction: column; gap: 15px;}
+    .content:not(.photo-gallery) img { width: 70%; max-width: none; margin: 0 auto; }
+/* Photos page: two photos per row */
+    .photo-gallery { flex-direction: row; flex-wrap: wrap; gap: 15px; }
+    .photo-gallery figure { width: calc(50% - 7.5px); max-width: none; }
+    .box { padding: 0.4cm; }
+    .contact { padding: 0.4cm; font-size: 0.95em; }
+}    
 
 /* short screens (landscape phones): just trim the page margin */
 @media (max-height: 500px) {
