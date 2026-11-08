@@ -32,7 +32,7 @@ h2:first-child { margin-top: 0; }
 .content figure img { width: 100%; height: auto; display: block; }
 .content figcaption { font-size: 0.75em; text-align: center; margin-top: 8px; }
 @media (max-width: 700px) {
-    .photo-gallery { flex-direction: row; gap: 15px; }
+    .photo-gallery { flex-direction: row; flex-wrap: wrap; gap: 15px; }
     .photo-gallery figure { width: calc(50% - 7.5px); max-width: none; }
 }
 
