@@ -15,20 +15,13 @@ a { text-decoration: none; color: #BD685E; font-weight: 500; }
 a:hover { background-color: #333333; color: #DBE9D6; }
 p { margin-bottom: 15px; line-height: 1.5; }
 .box { border: 1px solid black; height: auto; padding: 0.5cm; margin-top: 0.5cm; }
-/*.content { display: flex; align-items: flex-start; gap: 30px; }
-.content img { width: 40%; max-width: 450px; height: auto; display: block; }*/
 .content {
     display: flex;
     align-items: flex-start;
     gap: 30px;
     flex-wrap: wrap;
 }
-.content img {
-    width: calc(33.333% - 20px);
-    max-width: 450px;
-    height: auto;
-    display: block;
-}
+.content img { width: 40%; max-width: 450px; height: auto; display: block; }
          
 .text { flex: 1; min-width: 0; }
 .text p {margin-top: 0; }
@@ -46,6 +39,24 @@ h2:first-child { margin-top: 0; }
 .publications { padding-left: 1cm; margin-top: 0; line-height: 1.6; }
 .publications li { padding-left: 0.2cm; margin-bottom: 0.4cm; }
 
+.content figure {
+    width: calc(33.333% - 20px);
+    max-width: 450px;
+    margin: 0;
+}
+
+.content figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content figcaption {
+    font-size: 0.75em;
+    text-align: center;
+    margin-top: 8px;
+}
+
 /* narrow screens (portrait phones): stack photo above text */
 /*@media (max-width: 700px) {
   body { margin: 0.5in 0.75rem; }
@@ -62,10 +73,9 @@ h2:first-child { margin-top: 0; }
         gap: 15px;
     }
 
-    .content img {
+    .content figure {
         width: calc(50% - 7.5px);
         max-width: none;
-        margin: 0;
     }
 
     .box { padding: 0.4cm; }
@@ -89,14 +99,41 @@ h2:first-child { margin-top: 0; }
 </div>
 <div class="box">
    <div class="content">
-      <img src="norm.jpeg" alt="norman">
-      <img src="murph.jpeg" alt="murphy">
-            <img src="me.jpeg" alt="elaine">  
-      <img src="norm.jpeg" alt="norman1">
-      <img src="me.jpeg" alt="elaine1">     
-      <img src="murph.jpeg" alt="murphy1">
-      <img src="norm.jpeg" alt="norman2">
-      <img src="murph.jpeg" alt="murphy2">
+      <figure>
+        <img src="norm.jpeg" alt="norman">
+    </figure>
+
+    <figure>
+        <img src="murph.jpeg" alt="murphy">
+        <figcaption>Murphy</figcaption>
+    </figure>
+
+    <figure>
+        <img src="me.jpeg" alt="elaine">
+    </figure>
+
+    <figure>
+        <img src="norm.jpeg" alt="norman1">
+    </figure>
+
+    <figure>
+        <img src="me.jpeg" alt="elaine1">
+        <figcaption>Elaine</figcaption>
+    </figure>
+
+    <figure>
+        <img src="murph.jpeg" alt="murphy1">
+    </figure>
+
+    <figure>
+        <img src="norm.jpeg" alt="norman2">
+        <figcaption>Norman</figcaption>
+    </figure>
+
+    <figure>
+        <img src="murph.jpeg" alt="murphy2">
+        <figcaption>Murphy</figcaption>
+    </figure>
    </div>
 </div>  
 </body>
