@@ -9,12 +9,15 @@ p { margin-bottom: 15px; line-height: 1.5; }
 .content { display: flex; align-items: flex-start; gap: 30px; }
 .content img { width: 40%; max-width: 450px; height: auto; display: block; }
 .text { flex: 1; min-width: 0; }
-.cv-link { margin-top: 0; margin-bottom: 15px; }
-.cv { margin-top: 0; width: 100%; height: 700px; border: none; }
+.text p {margin-top: 0; }
+
 .contact { margin-top: 0.5cm; padding: 0.5cm; background-color: #C5D8BE; line-height: 1.6; box-sizing: border-box;
          overflow-wrap: anywhere; }
 .contact p { margin: 0; }
 .label { font-weight: 600; }
+
+.cv-link { margin-top: 0; margin-bottom: 15px; }
+.cv { margin-top: 0; width: 100%; height: 700px; border: none; }
 
 h2 { font-weight: 500; font-size: 1.2em; margin-top: 1cm; margin-bottom: 0.1cm; }
 h2:first-child { margin-top: 0; }
